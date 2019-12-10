@@ -1,0 +1,235 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Quicksand', sans-serif;
+}
+body {
+    display: flex;
+    flex-direction: column;
+}
+div.main {
+    background-color: rgb(0,0,0);
+    width: 100%;
+    height: 100vh;
+}
+div#welcome-section {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+div#welcome-section h1{
+    text-align: center;
+    font-size: 2.5em;
+    color: white;
+    margin: 50vh auto 50vh auto;
+}
+div#welcome-section p {
+    text-align: center;
+    font-size: 1.2em;
+    color: rgb(195, 140, 197);
+    margin: -50vh auto -50vh auto;
+}
+span {
+    color: rgb(98, 173, 108);
+}
+span.dot {
+    color: blueviolet;
+    font-size: 1.5em;
+}
+#navbar {
+    min-height: 25px;
+    background-color: rgb(0,0,0);
+    color: white;
+    font-size: 1.2em;
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 0 auto;
+    width: 100%;
+}
+#navbar ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+#navbar ul li{
+    list-style-type: none;
+}
+#navbar ul li{
+    padding: 0px 40px;
+}
+#navbar ul li:hover {
+    cursor: pointer;
+    color: aqua;
+}
+@media only screen and (max-width: 500px){
+    #navbar ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+}
+    #navbar ul li{
+        padding-bottom: 10px;
+}
+}
+div.part-2 {
+    background-color: rgb(0,0,0);
+    color: white;
+}
+div.project-tile {
+    text-align: center;
+    margin: 100px 100px;
+}
+
+div.codepen {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 5px;
+    transition: all 1s;
+}
+.box-1 {
+    width: 200px;
+    height: 200px;
+    background: url("https://source.unsplash.com/C6CVXJMXwqs");
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    transition-duration: 1s;
+}
+.box-2 {
+    width: 200px;
+    height: 200px;
+    background: url("https://source.unsplash.com/2GA2Q2ESOyg");
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    transition-duration: 1s;
+}
+.box-3 {
+    width: 200px;
+    height: 200px;
+    background: url("https://source.unsplash.com/hep72i867oI");
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    transition-duration: 1s;
+}
+.box-4 {
+    width: 200px;
+    height: 200px;
+    background: url("https://source.unsplash.com/Xrx3WWyrwes");
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    transition-duration: 1s;
+}
+.box-5 {
+    width: 200px;
+    height: 200px;
+    background: url("https://source.unsplash.com/_4Ib-a8g9aA");
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    transition-duration: 1s;
+}
+a {
+    text-decoration: none;
+    margin: 10px;
+    color: white;
+}
+.box-1 p, .box-2 p, .box-3 p, .box-4 p, .box-5 p{
+    padding: 85px 0;
+}
+.box-1:hover, .box-2:hover, .box-3:hover, .box-4:hover,.box-5:hover  {
+    cursor: pointer;
+    opacity: 0.5;
+}
+@media only screen and (max-width: 1110px) {
+
+    div.codepen {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 20px;
+        align-items: center;
+}
+}
+.show-all {
+    width: 120px;
+    height:  40px;
+    border-radius: 20px;
+    background: linear-gradient(45deg, rgb(228, 169, 243), rgb(167, 212, 212));
+    margin: auto;
+    margin-bottom: 100px;
+}
+.show-all p {
+    cursor: pointer;
+    text-align: center;
+    margin: 50px 0;
+    color: rgb(49, 49, 49);
+    font-weight: 900;
+    padding: 10px;
+}
+.show-all:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+div.contact {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+div.contact h3 {
+    font-size: 1.5em;
+    margin: 20px;
+}
+div.contact p {
+    margin-bottom: 50px;
+}
+.box-6 p, .box-7 p, .box-8 p, .box-9 p, .box-10 p{
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(45deg, rgb(103, 121, 62), rgb(108, 156, 156));
+    color: #eeeeee;
+    font-weight: 900;
+    padding-top: 40px;
+    border-radius: 50%;
+}
+div.contact-1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+@media only screen and (max-width: 600px) {
+    div.contact-1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .box-6, .box-7, .box-8, .box-9,  .box-10 {
+        margin-bottom: -10px;
+    }
+}
+footer {
+    background-color: rgb(12, 12, 12);
+    width: 100%;
+    height: 10vh;
+}
+footer p {
+    color: white;
+    text-align: center;
+    padding-top: 25px;
+}
